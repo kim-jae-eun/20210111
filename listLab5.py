@@ -2,9 +2,8 @@ import random
 lotto = []
 while len(lotto) != 6:
     a = random.randint(1, 45)
-    if a in lotto:
-        continue
-    lotto.append(a)
+    if a not in lotto:
+        lotto.append(a)
 print('행운의 로또번호 : ', end='')
 print(*lotto, sep=', ')
 

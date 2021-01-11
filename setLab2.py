@@ -1,8 +1,7 @@
 import random
 a = set()
 while len(a) != 6:
-    i = random.randint(1, 45)
-    a = a | {i}
+    a = a | {random.randint(1, 45)}
 print('행운의 로또번호 :', end=' ')
 print(*a, sep=', ')
 
